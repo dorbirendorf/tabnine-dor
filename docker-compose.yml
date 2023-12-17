@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: 'rabbitmq:3.9.12-management-alpine'
+    ports:
+      - '5672:5672'  # RabbitMQ default port
+      - '15672:15672'  # RabbitMQ Management Plugin
